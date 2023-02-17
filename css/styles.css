@@ -1066,12 +1066,8 @@ button {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
-    position: absolute;
-    /* width: 360px;
-    height: 24px;
-    left: 553px;
-    top: 152px; */
-    padding-bottom: 24px;
+    padding-top: 72px;
+    padding-bottom: 16px;
 }
 
 .modal-form {
@@ -1085,6 +1081,14 @@ button {
 .modal-form-input-desk {
     display: block;
     margin-bottom: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+
 }
 
 .modal-form-input {
@@ -1115,9 +1119,30 @@ button {
     margin-bottom: 20px;
     resize: none;
     border-radius: 4px;
+    transition: border-color var(--time);
+}
+
+.input-text::placeholder {
+    text-transform: unset;
 }
 
 .modal-form-check {}
+
+.modal-form-check::before {
+
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: block;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* -------CHECK ----------------*/
+.modal-form-check:checked+.form-privacy {
+    background-color: #4D5AE5;
+}
 
 .form-privacy {}
 
@@ -1139,7 +1164,6 @@ button {
     display: block;
     width: 18px;
     height: 18px;
-    background-color: #868686;
     position: absolute;
     top: 50%;
     left: 16px;
@@ -1156,3 +1180,10 @@ button {
     fill: var(--accent-focus);
     /* background-color: #404bbf; */
 }
+
+.drop-icon {
+
+    fill: #8E8F99;
+}
+
+.modal-form-input-icon:focus
