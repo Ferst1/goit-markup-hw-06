@@ -1132,8 +1132,7 @@ button {
 
 .modal-form-check {}
 
-.modal-form-check::before {
-
+.modal-form-policy-check::before {
     content: "";
     width: 18px;
     height: 18px;
@@ -1144,9 +1143,13 @@ button {
 }
 
 /* -------CHECK ----------------*/
-.modal-form-check:checked+.form-privacy {
+.modal-form-check:checked+.modal-form-policy-check::before {
     background-color: var(--accent-focus);
 }
+
+
+background-color: #31D0AA;
+
 
 .form-privacy {}
 
@@ -1184,6 +1187,7 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     align-content: center;
+    display: block;
 }
 
 .modal-form-input-icon {
