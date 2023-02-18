@@ -628,18 +628,12 @@ button {
 .icon {
     width: 104px;
     height: 56px;
-    fill: #afb1b8;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, background-color, box-shadow, ;
-    transition-duration: 250ms;
-    transition: fill cubic-bezier(0.4, 0, 0.2, 1);
+    fill: currentColor;
 }
 
 .customers-list {
     display: flex;
     gap: 24px;
-
-
 }
 
 .link-cust {
@@ -650,17 +644,15 @@ button {
     height: 100%;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-    transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .link-cust:hover,
 .link-cust:focus {
     border-color: var(--hover-focus-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--hover-focus-color);
 }
 
 .link-cust:hover .icon,
@@ -1066,9 +1058,10 @@ button {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-top: 72px;
+    padding-top: 64px;
     padding-bottom: 16px;
 }
+
 
 .modal-form {
     display: flex;
@@ -1076,8 +1069,15 @@ button {
     height: 16px;
 }
 
-.form-field {}
 
+.modal-form-input:focus+.modal-form-input-icon .drop-icon {
+    fill: var(--accent-focus)
+}
+
+/* ---------2 правильний варіант--------- */
+.form-field:focus-within .drop-icon {}
+
+/* ----------- */
 .modal-form-input-desk {
     display: block;
     margin-bottom: 4px;
@@ -1089,6 +1089,10 @@ button {
     letter-spacing: 0.04em;
     color: #8E8F99;
 
+}
+
+.modal-form-input-desk:focus+.drop-icon>use {
+    fill: var(--accent-focus)
 }
 
 .modal-form-input {
@@ -1141,7 +1145,7 @@ button {
 
 /* -------CHECK ----------------*/
 .modal-form-check:checked+.form-privacy {
-    background-color: #4D5AE5;
+    background-color: var(--accent-focus);
 }
 
 .form-privacy {}
@@ -1150,7 +1154,18 @@ button {
 
 .visually-hidden {}
 
-.accept-policy-text {}
+.accept-policy-text {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #757575;
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
 
 .privacy-link {}
 
@@ -1158,6 +1173,17 @@ button {
 
     color: var(--accent-color);
     background-color: var(--accent-focus);
+    width: 169px;
+    height: 56px;
+    display: ;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    align-content: center;
 }
 
 .modal-form-input-icon {
@@ -1178,7 +1204,8 @@ button {
 
 .modal-form-input:focus+.modal-form-input-icon {
     fill: var(--accent-focus);
-    /* background-color: #404bbf; */
+
+
 }
 
 .drop-icon {
@@ -1186,4 +1213,28 @@ button {
     fill: #8E8F99;
 }
 
-.modal-form-input-icon:focus
+
+
+
+.modal-form-input-icon:focus-within>.drop-icon {
+    fill: #4D5AE5;
+}
+
+
+/* -------------------Conferencia------------------ */
+
+
+
+
+
+
+
+
+1. Модальне вікно https: //codepen.io/icezuev/pen/wvoxvWz?editors=1111
+2. спливаюче вікно на сайті із запуском по таймеру https: //codepen.io/Onetwostudy/pen/vyNvBq
+3. Один скрипт для модальних вікон посилання на статтю http: //surl.li/ectxw посилання на codepen https://codepen.io/dan_postnov/pen/gjBqPb
+
+
+
+
+Зміна кольору плейсхолдера та іконки при ховер/фокус : https: //codepen.io/mpadalko/pen/JjvvMoE?editors=1100
