@@ -1055,7 +1055,7 @@ button {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-top: 64px;
+    margin-top: 24px;
     padding-bottom: 16px;
 }
 
@@ -1136,12 +1136,17 @@ button {
     border-radius: 2px;
     cursor: pointer;
     border: 1.25px solid #2E2F42;
-    background-image: url();
+    background-image: url(../images/icons.svg/vector-check.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+
 }
 
 /* -------CHECK ----------------*/
 .modal-form-check:checked+.modal-form-policy-check::before {
     background-color: var(--accent-focus);
+    fill: var(--accent-focus);
 }
 
 
@@ -1188,18 +1193,19 @@ background-color: #31D0AA;
 
     color: var(--accent-color);
     background-color: var(--accent-focus);
-    display: ;
-    display: flex;
+    display: flex-wrap;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    align-items: center;
+
 }
 
 .madal-btn-drop {
     align-items: center;
     margin: auto;
     background-color: rgba(77, 90, 229, 1);
-
-
 }
 
 .modal-form-input-icon {
@@ -1392,19 +1398,3 @@ background-color: #31D0AA;
 
 
 /* -------------------Conferencia------------------ */
-
-
-
-
-
-
-
-
-1. Модальне вікно https: //codepen.io/icezuev/pen/wvoxvWz?editors=1111
-2. спливаюче вікно на сайті із запуском по таймеру https: //codepen.io/Onetwostudy/pen/vyNvBq
-3. Один скрипт для модальних вікон посилання на статтю http: //surl.li/ectxw посилання на codepen https://codepen.io/dan_postnov/pen/gjBqPb
-
-
-
-
-Зміна кольору плейсхолдера та іконки при ховер/фокус : https: //codepen.io/mpadalko/pen/JjvvMoE?editors=1100
