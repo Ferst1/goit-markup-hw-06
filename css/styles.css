@@ -758,9 +758,6 @@ button {
     color: rgba(231, 233, 252, 1);
 }
 
-
-.container-foot2 {}
-
 .footer-erst {
 
     display: flex;
@@ -1097,7 +1094,6 @@ button {
 
 .modal-form-input {
     width: 100%;
-    /* border: rgba(21, 21, 21, 20%); */
     height: 56px;
     border-radius: 4px;
     padding-left: 38px;
@@ -1192,18 +1188,18 @@ background-color: #31D0AA;
 
     color: var(--accent-color);
     background-color: var(--accent-focus);
-    width: 169px;
-    height: 56px;
     display: ;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 16px 32px;
-    gap: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    align-content: center;
-    display: block;
+}
+
+.madal-btn-drop {
+    align-items: center;
+    margin: auto;
+    background-color: rgba(77, 90, 229, 1);
+
+
 }
 
 .modal-form-input-icon {
@@ -1239,6 +1235,160 @@ background-color: #31D0AA;
 .modal-form-input-icon:focus-within>.drop-icon {
     fill: #4D5AE5;
 }
+
+
+
+/* -----------SUBSCRIBE----------- */
+.subscribe {
+    display: flex;
+}
+
+.container-subscribe {
+    display: block;
+
+}
+
+.footer-btn-subscribe:focus-within>.sub-icon {
+
+    background-color: var(--accent-focus);
+    fill: var(--button-color);
+}
+
+.subscribe-desk:focus {
+
+    border-color: var(--accent-focus);
+}
+
+
+
+.subscribe-title {
+    color: var(--accent-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    cursor: pointer;
+    margin-left: 59px;
+    transition: color var(var(--time));
+
+
+}
+
+.subscribe-title:hover .subscribe-title:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+.subscribe-cont {
+    display: flex;
+    margin-top: 16px;
+    padding-left: 0;
+}
+
+.subscribe-emeil {
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+.subscribe-desk {
+    display: flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    margin-left: 0;
+    padding: left 0;
+    outline: none;
+
+}
+
+.subscribe-emeil--wrapper {
+    display: flex;
+}
+
+.subscribe-e-meil-input {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-e-meil-input:focus {
+    border-color: var(--accent-focus);
+}
+
+
+.subscribe-e-meil-input>E-meil {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+.footer-btn-subscribe {
+    display: flex;
+    margin-left: 24px;
+    padding: 0;
+    gap: 16px;
+    background: #4D5AE5;
+    border-radius: px;
+    color: var(--accent-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    width: 165px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    outline: none;
+}
+
+.footer-btn-subscribe:hover,
+.footer-btn-subscribe:focus {
+
+    background: var(--hover-focus-color);
+    fill: var(--green-hover-color)
+}
+
+.subscribe-input-icon:focus-within.sub-icon> {
+    fill: #31D0AA;
+}
+
+.subscribe-input-icon {
+    fill: var(--accent-color);
+    padding-left: ;
+}
+
+.drop-icon {}
+
 
 
 /* -------------------Conferencia------------------ */
