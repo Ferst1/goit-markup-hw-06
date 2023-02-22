@@ -1003,7 +1003,7 @@ button {
 .modal {
     position: absolute;
     width: 408px;
-    height: 576px;
+    min-height: 576px;
     left: 50%;
     top: 50%;
     background: #FCFCFC;
@@ -1063,7 +1063,6 @@ button {
 .modal-form {
     display: flex;
     flex-direction: column;
-    height: 16px;
 }
 
 
@@ -1206,6 +1205,7 @@ background-color: #31D0AA;
     height: 56px;
     align-items: center;
     padding: 0;
+    transition: background-color var(--time);
 
 }
 
