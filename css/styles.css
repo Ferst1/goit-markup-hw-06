@@ -1065,7 +1065,6 @@ button {
     flex-direction: column;
 }
 
-
 .modal-form-input:focus+.modal-form-input-icon .drop-icon {
     fill: var(--accent-focus)
 }
@@ -1143,8 +1142,11 @@ button {
     border: 1.25px solid #2E2F42;
     background-image: url(../images/icons.svg/vector-check.svg);
     background-repeat: no-repeat;
-    align-items: center;
-    display: flex;
+    /* align-items: center; */
+    /* align-content: center; */
+    background-origin: border-box;
+    border-color: var(--accent-focus);
+    background-size: contain;
 
 }
 
@@ -1161,7 +1163,6 @@ background-color: #31D0AA;
     display: flex;
     align-items: center;
     font-style: normal;
-
 }
 
 .modal-form-check-text {
@@ -1171,13 +1172,16 @@ background-color: #31D0AA;
     color: #757575;
     margin-bottom: 24px;
     display: flex;
+    display: inline-block;
+}
+
+.modal-form-check {
+    /* appearance: none; */
 }
 
 .form-privacy {}
 
 .checkbox {}
-
-.visually-hidden {}
 
 .accept-policy-text {
 
@@ -1238,6 +1242,9 @@ background-color: #31D0AA;
 .drop-icon {
 
     fill: var(--grei-color);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: var(--accent-color);
 }
 
 .modal-form-input-icon:focus-within>.drop-icon {
