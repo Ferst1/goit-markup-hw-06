@@ -1057,6 +1057,7 @@ button {
     letter-spacing: 0.02em;
     margin-top: 24px;
     padding-bottom: 16px;
+    color: #2E2F42;
 }
 
 
@@ -1075,7 +1076,7 @@ button {
 /* ----------- */
 .modal-form-input-desk {
     display: block;
-    margin-bottom: 4px;
+    margin-top: 8px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -1092,11 +1093,14 @@ button {
 
 .modal-form-input {
     width: 100%;
-    height: 56px;
+    height: 40px;
     border-radius: 4px;
     padding-left: 38px;
     transition: border-color var(--time);
-    outline: transparent;
+    outline: none;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transition-property: border;
 }
 
 .modal-form-input:focus {
@@ -1119,6 +1123,14 @@ button {
     resize: none;
     border-radius: 4px;
     transition: border-color var(--time);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .input-text::placeholder {
@@ -1142,11 +1154,10 @@ button {
     border: 1.25px solid #2E2F42;
     background-image: url(../images/icons.svg/vector-check.svg);
     background-repeat: no-repeat;
-    /* align-items: center; */
-    /* align-content: center; */
     background-origin: border-box;
-    border-color: var(--accent-focus);
     background-size: contain;
+    color: rgba(46, 47, 66, 1);
+
 
 }
 
@@ -1163,6 +1174,7 @@ background-color: #31D0AA;
     display: flex;
     align-items: center;
     font-style: normal;
+
 }
 
 .modal-form-check-text {
@@ -1174,14 +1186,6 @@ background-color: #31D0AA;
     display: flex;
     display: inline-block;
 }
-
-.modal-form-check {
-    /* appearance: none; */
-}
-
-.form-privacy {}
-
-.checkbox {}
 
 .accept-policy-text {
 
@@ -1196,8 +1200,6 @@ background-color: #31D0AA;
     padding-bottom: 24px;
 }
 
-.privacy-link {}
-
 .modal-form-submint {
 
     color: var(--accent-color);
@@ -1210,6 +1212,7 @@ background-color: #31D0AA;
     align-items: center;
     padding: 0;
     transition: background-color var(--time);
+    border-color: transparent;
 
 }
 
@@ -1241,7 +1244,7 @@ background-color: #31D0AA;
 
 .drop-icon {
 
-    fill: var(--grei-color);
+    fill: var(--tittle-body-color);
     background-size: contain;
     background-origin: border-box;
     border-color: var(--accent-color);
@@ -1254,100 +1257,50 @@ background-color: #31D0AA;
 
 
 /* -----------SUBSCRIBE----------- */
-.subscribe {
-    display: flex;
-}
 
-.container-subscribe {
-    display: block;
+.footer-btn-subscribe:focus+.sub-icon {
 
-}
-
-.footer-btn-subscribe:focus-within>.sub-icon {
-
-    background-color: var(--accent-focus);
+    background-color: var(--abloccent-focus);
     fill: var(--button-color);
 }
 
-.subscribe-desk:focus {
 
-    border-color: var(--accent-focus);
-}
-
-.subscribe-title {
-    color: var(--accent-color);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    margin-bottom: 16px;
-    cursor: pointer;
-    margin-left: 59px;
-    transition: color var(var(--time));
-}
-
-.subscribe-title:hover .subscribe-title:focus {
+.footer-title:hover .footer-title:focus {
     color: rgba(255, 255, 255, 1);
 }
 
-.subscribe-cont {
-    display: flex;
-    margin-top: 16px;
-    padding-left: 0;
+
+.sub-icon {
+    fill: var(--accent-color);
 }
 
-.subscribe-emeil {
-    display: inline-flex;
-    margin-left: 20px;
-}
 
-.subscribe-desk {
-    display: flex;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    margin-left: 0;
-    padding: left 0;
-    outline: none;
-
-}
-
-.subscribe-emeil--wrapper {
-    display: flex;
-}
-
-.subscribe-e-meil-input {
-    display: flex;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    width: 264px;
-    height: 40px;
-    padding-left: 16px;
-    outline: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.04em;
-
-    color: var(--logo-accent);
-}
-
-.subscribe-e-meil-input:focus {
+.footer-input:focus {
     border-color: var(--accent-focus);
 }
 
+.footer-btn-subscribe:hover,
+.footer-btn-subscribe:focus {
 
-.subscribe-e-meil-input>E-meil {
+    background: var(--hover-focus-color);
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-input {
+    background-color: transparent;
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    color: var(--accent-color);
+    padding: 8px 16px;
+    margin-right: 24px;
+    margin-left: 80px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1358,15 +1311,12 @@ background-color: #31D0AA;
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-
 .footer-btn-subscribe {
-    display: flex;
     margin-left: 24px;
-    padding: 0;
+    padding: 8px 24px;
     gap: 16px;
     background: #4D5AE5;
-    border-radius: px;
+    border-radius: 4px;
     color: var(--accent-color);
     font-family: 'Roboto';
     font-style: normal;
@@ -1376,28 +1326,22 @@ background-color: #31D0AA;
     letter-spacing: 0.04em;
     width: 165px;
     height: 40px;
-    justify-content: center;
+    border-color: transparent;
+    transition-property: background-color;
+    transition-timing-function: var(--time);
+    display: flex;
     align-items: center;
-    align-content: center;
-    outline: none;
 }
 
-.footer-btn-subscribe:hover,
-.footer-btn-subscribe:focus {
-
-    background: var(--hover-focus-color);
+.footer-title {
+    color: var(--accent-color);
+    margin-bottom: 16px;
+    margin-left: 80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
 }
-
-.subscribe-input-icon:focus+.sub-icon {}
-
-
-.subscribe-input-icon {
-    fill: var(--accent-color);
-    padding-left: ;
-}
-
-.drop-icon {}
-
-
-
-/* -------------------Conferencia------------------ */

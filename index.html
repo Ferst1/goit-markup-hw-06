@@ -429,41 +429,32 @@
         </div>
 
         <!-- ------------------------------SUBSCRIBE-------------------- -->
-        <div class="container-subscribe">
-          <b class="subscribe-title">Subscribe</b>
-          <form 
-          class="subscribe-footer"
-          name="subscribe"
-          autocomplete="on"
-          >
-          <div class="subscribe-cont">
-            <label class="subscribe-emeil">
-              <span class="subscribe-desk"> Email </span>
-              <span class="subscribe-emeil-wrapper">
-                <input
-                  type="e_mail"
-                  name="user-mail"
-                  class="subscribe-e-meil-input"
-                  required
-                  placeholder="E-meil"
-                  pattern="^[]"
-                /> </span
-            ></label>
-            <button type="submit" class="footer-btn-subscribe">
-              Subscribe
-              <span class="subscribe-input-icon">
-                <svg class="sub-icon" width="24" height="24">
-                  <use href="./images/icons.svg/sprait.svg#icon-subscribe"></use>
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-        </form>
-      </div>
+        <div>
+          <form>
+            <p class="footer-title">Subscribe</p>
 
-      <!--  --------------------------------------------------->
-    </footer>
+            <label for="email-contact"></label>
+            <div class="footer-form">
+              <input
+                class="footer-input"
+                type="email"
+                name="subscribe"
+                id="email-contact"
+                placeholder="E-mail"
+                required
+              />
+            <button class="footer-btn-subscribe" type="submit">
+                Subscribe
+                <span>
+                  <svg class="sub-icon" width="24" height="24">
+                    <use href="./images/icons.svg/sprait.svg#icon-subscribe"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+   </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -533,25 +524,26 @@
 
           <label class="form-field">
             <span class="modal-form-input-desk"> Comment </span>
-            <!-- <input type="text"class="modal-form-input"/> -->
             <textarea
               class="input-text"
               name="user-message"
-              placeholder="Input text"
+              placeholder="Text-input"
             ></textarea>
           </label>
 <!-- ----------------------------CHECKBOX------------------- -->
-            <input
+           <div class="modal-field">
+         <input
             class="modal-form-check visually-hidden"
             id="user-policy"
             type="checkbox"
-            name="user-policy"  
-          />
+            />
           <span class="modal-form-policy-check"></span>
           <label for="user-policy" class="modal-form-check-text"
             >I accept the terms and conditions of the&nbsp;
             <a href="#"> Privacy Policy</a></label>
-         
+
+           </div>
+
             <div class="madal-btn-drop">
             <button type="submit" class="modal-form-submint">Send</button>
           </div>
