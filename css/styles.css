@@ -1005,15 +1005,18 @@ button {
     background: #FCFCFC;
     transform: translate(-50%, -50%);
     padding: 24px;
+    padding-top: 72px;
 
 }
 
 .modal-close-btn {
+
     width: 24px;
     height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
     margin-left: auto;
     background-color: transparent;
     border: 1px solid var(--grei-color);
@@ -1073,6 +1076,7 @@ button {
 .modal-form-input-desk {
     display: block;
     margin-top: 8px;
+    margin-bottom: 4px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
