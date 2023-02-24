@@ -994,6 +994,7 @@ button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    background-color: rgba(46, 47, 66, 0.4);
 }
 
 .modal {
@@ -1002,10 +1003,10 @@ button {
     min-height: 576px;
     left: 50%;
     top: 50%;
-    background: #FCFCFC;
+    background-color: #FCFCFC;
     transform: translate(-50%, -50%);
     padding: 24px;
-    padding-top: 72px;
+    padding-top: ;
 
 }
 
@@ -1054,8 +1055,7 @@ button {
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
-    margin-top: 24px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     color: #2E2F42;
 }
 
@@ -1117,7 +1117,7 @@ button {
 
 .input-text {
     width: 100%;
-    height: 100px;
+    height: 120px;
     padding: 15px;
     margin-bottom: 20px;
     resize: none;
@@ -1129,9 +1129,10 @@ button {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.04em;
-
     color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
 }
+
 
 .input-text::placeholder {
     text-transform: unset;
@@ -1174,7 +1175,6 @@ background-color: #31D0AA;
     display: flex;
     align-items: center;
     font-style: normal;
-
 }
 
 .modal-form-check-text {
@@ -1184,7 +1184,7 @@ background-color: #31D0AA;
     color: #757575;
     margin-bottom: 24px;
     display: flex;
-    display: inline-block;
+    padding-left: 8px;
 }
 
 .accept-policy-text {
@@ -1204,17 +1204,26 @@ background-color: #31D0AA;
 
     color: var(--accent-color);
     background-color: var(--accent-focus);
-    display: flex-wrap;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     width: 169px;
     height: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
     align-items: center;
-    padding: 0;
+    text-align: center;
+    align-content: center;
+    letter-spacing: 0.04em;
     transition: background-color var(--time);
     border-color: transparent;
-    transition: background-color var(--time);
 
+}
+
+.modal-field {
+    display: flex;
 }
 
 .madal-btn-drop {
@@ -1301,7 +1310,6 @@ background-color: #31D0AA;
     color: var(--accent-color);
     padding: 8px 16px;
     margin-right: 24px;
-    margin-left: 80px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1313,9 +1321,6 @@ background-color: #31D0AA;
 }
 
 .footer-btn-subscribe {
-    margin-left: 24px;
-    padding: 8px 24px;
-    gap: 16px;
     background: #4D5AE5;
     border-radius: 4px;
     color: var(--accent-color);
@@ -1332,12 +1337,17 @@ background-color: #31D0AA;
     transition-timing-function: var(--time);
     display: flex;
     align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.email-subscribe {
+    margin-left: 159px;
 }
 
 .footer-title {
     color: var(--accent-color);
     margin-bottom: 16px;
-    margin-left: 80px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -1345,4 +1355,7 @@ background-color: #31D0AA;
     line-height: 24px;
     letter-spacing: 0.02em;
     cursor: pointer;
+    display: flex;
+    align-content: center;
+    margin-left: auto;
 }
